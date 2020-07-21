@@ -82,7 +82,7 @@ function saveReadme(readmeData) {
     })
 }
 
-async function init(reponse) {
+async function init() {
     const answers = await askQuestion();
     const text = generateReadme(answers);
     saveReadme(text);
